@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fillpattern_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fillpattern/fillpattern_{{ version }}.tar.gz
-  sha256: e4443221893fbc76dc8b986fce900e6bbf6ca4383ef70fe0d2292fc265ff9963
+  sha256: 3c02c00d8071405e01221bbf178b541abe022605b5578c8fb09d37fccca40081
 
 build:
   noarch: generic
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,8 +38,8 @@ about:
   home: https://cmmr.github.io/fillpattern/
   dev_url: https://github.com/cmmr/fillpattern
   license: MIT
-  summary: Adds distinctive yet unobtrusive geometric patterns where solid color fills are normally used. Patterned figures look just as professional when viewed by colorblind readers or when printed in black and white. The dozen included patterns can be customized in terms of scale, rotation, color, fill, line type, and
-    line width. Compatible with the 'ggplot2' package as well as 'grid' graphics.
+  summary: Adds distinctive yet unobtrusive geometric patterns where solid color fills are normally used. Patterned figures look just as professional when viewed by colorblind readers or when printed in black and white. The dozen included patterns can be customized in terms of scale, rotation, color, fill, line type, 
+    and line width. Compatible with the 'ggplot2' package as well as 'grid' graphics.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
