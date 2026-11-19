@@ -1,4 +1,4 @@
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fillpattern_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fillpattern/fillpattern_{{ version }}.tar.gz
-  sha256: 07032a4697b185ec2e8153a891a233c321b8138316a6c9dd2770c25064e4e6c7
+  sha256: 744ba6c99cd672ed821294c875f4cd73d14471e8a6d278e3f690b2f32fedaa5a
 
 build:
   noarch: generic
